@@ -1,0 +1,124 @@
+@media (max-width: 900px) {
+
+    .introducao {
+        grid-template-columns: 1fr 1fr;
+        padding: 2.5rem 1rem;
+        gap: 2.25rem;
+    }
+
+    .introducao-conteudo h1 {
+        position: relative;
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+
+    .introducao-conteudo p {
+        font-size: 1.2rem;
+    }
+
+    .experiencia,
+    .formacao {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 2.5rem 1rem;
+    }
+
+    .experiencia p {
+        font-size: 1.2rem;
+    }
+
+    .experiencia .paragrafo-resumo {
+        max-width: 80ch;
+        margin: 0 auto;
+    }
+
+    .subtitulo h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .curso-resumo {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .curso-resumo h3>span {
+        position: absolute;
+        left: 80px;
+    }
+
+    .curso-resumo .experiencia-resumo {
+        font-size: 1rem;
+    }
+
+    .content-2fr .paragrafo-resumo p {
+        font-size: 1.2rem;
+    }
+
+    .contato {
+        grid-template-columns: 1fr;
+    }
+
+    .contato .contato-resumo {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .meio-de-contato {
+        place-items: center;
+    }
+
+    .meio-de-contato a {
+        font-size: .875rem;
+    }
+
+    .contato::before {
+        width: 150px;
+        height: 20px;
+        top: 0;
+    }
+
+    .idiomas,
+    .cursos-intensivos {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cabecalho {
+        display: grid;
+        justify-items: center;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
+
+    .cabecalho-navegacao a {
+        padding: 0.625rem 1rem;
+    }
+
+    .introducao {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .introducao h1, .introducao p {
+        text-align: center;
+    }
+
+    .introducao-conteudo h1::before {
+        display: none;
+    }
+
+    .experiencia {
+        gap: 2rem;
+        margin: 4rem 0;
+    }
+
+    .subtitulo h2 {
+        font-size: 3rem;
+    }
+
+    .cursos {
+        grid-template-columns: 1fr;
+    }
+}
